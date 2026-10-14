@@ -1,7 +1,8 @@
 # RTF - Role Task Fromat
 
 Táto schéma sa nachádza na stránke https://frompting.com/frameworks v sekcii AI & Prompt Engineering.
-Vybral som si túto schému, pretože pôsobí jednoducho, ale v podstate poskytuje miesto pre všetky informácie, takže by mohla slúžiť ako dobrý doplnok k ostatným dvom komplexnejším schémam. 
+Vybral som si túto schému, pretože pôsobí jednoducho, ale v podstate poskytuje miesto pre všetky informácie, takže by mohla slúžiť ako dobrý doplnok k ostatným dvom komplexnejším schémam.
+Očakávam, že pre svoju jednoduchoť asi nemá, čo pokaziť. 
 
 ## Template 
 Role: [What kind of system answers. For structured output: one that returns data, never commentary]

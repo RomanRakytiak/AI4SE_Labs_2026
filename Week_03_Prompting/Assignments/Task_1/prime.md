@@ -1,7 +1,7 @@
 # PRIME Purpose-Requirements-Instructions-Metrics-Examples
 
 Táto schéma sa nachádza na stránke https://frompting.com/frameworks v sekcii Product & Growth.
-Vybral som si túto schému, pretože jej formát pôsobí vhodný na túto úlohu, poskytuje miesto skoro pre všetky informácie.
+Vybral som si túto schému, pretože jej formát pôsobí vhodný na túto úlohu, poskytuje miesto skoro pre všetky informácie. Očakávam, že by mohla dobre fungovať pre tento typ úlohy.
 
 ## Template
 [The endpoint or interface, and the ONLY facts available — limits, codes, lifetimes, where credentials come from]
