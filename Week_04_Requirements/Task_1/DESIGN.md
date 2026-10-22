@@ -7,7 +7,8 @@ Sieť prijme adresár s textovými dokumentmi (.txt, .eml, .md, .rst, .csv, .jso
 Implementácia je v LangGraph (StateGraph) so zdieľaným stavom NetworkState.
 
 ## Graf 
-```START → load_documents → extract_candidates → consolidate_requirements
+```
+START → load_documents → extract_candidates → consolidate_requirements
                                                   ↑            ↓
                                                   │     deterministic_validate
                                                   │            ↓
