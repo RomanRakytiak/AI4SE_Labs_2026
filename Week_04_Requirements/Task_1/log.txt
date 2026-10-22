@@ -1,4 +1,4 @@
-Loading documents from C:\Users\rraky\OneDrive - Univerzita Komenskeho v Bratislave\swe_ai\AI4SE_Labs_2026\Week_04_Requirements\Task_1\data\corpus
+Loading documents 
 |-> found 20 supported files
 Extracting candidates file by file
 ...inspecting conversations/conv_pines014_material_volume.eml
