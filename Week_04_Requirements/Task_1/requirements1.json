@@ -1,0 +1,420 @@
+{
+  "title": "Refined Software Requirements",
+  "priority_scale": {
+    "Critical": "Required for the system to be viable or safe.",
+    "High": "Important for the primary workflow; omission causes major impact.",
+    "Medium": "Valuable requirement that can follow the primary workflow.",
+    "Low": "Useful enhancement with limited impact if deferred."
+  },
+  "requirements": [
+    {
+      "name": "Management reporting scope",
+      "explanation": "Provide management-process reports and analysis tools for library managers, administrators, and staff, without reducing or replacing the day-to-day patron-facing OPAC and circulation functionality.",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt",
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-001"
+    },
+    {
+      "name": "Collection-use analysis",
+      "explanation": "Provide analysis of the library collection and how it is used by patrons, including output formats suitable for management review and actionable drill-down where applicable.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt"
+      ],
+      "id": "REQ-002"
+    },
+    {
+      "name": "Branch-capacity analysis",
+      "explanation": "Provide analysis of branch capacity and support decisions for optimal distribution of the collection across branches.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt"
+      ],
+      "id": "REQ-003"
+    },
+    {
+      "name": "Patron-demographics and interests analysis",
+      "explanation": "Provide analysis of patron demographics and interests to support planning and management decisions (define required outputs, granularity, time window(s), refresh frequency, and success criteria in implementation).",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt",
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-004"
+    },
+    {
+      "name": "Staff productivity and workflow analysis",
+      "explanation": "Provide analysis of staff productivity and workflow to help identify process bottlenecks and performance improvements (define required outputs, measurement approach, time windows, and success criteria in implementation).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt"
+      ],
+      "id": "REQ-005"
+    },
+    {
+      "name": "Financial-transaction tracking",
+      "explanation": "Support tracking and verification of financial transactions and provide auditability and reconciliation support (implementation must specify audit trail format, retention, encryption, access controls, and reconciliation procedures).",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt"
+      ],
+      "id": "REQ-006"
+    },
+    {
+      "name": "Executive reports interface",
+      "explanation": "Provide an Executive Reports Interface with the predefined set of reports needed by library executives and directors, including role-based access to report sets and required metadata (owner, parameters, run time, etc.).",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt",
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-007"
+    },
+    {
+      "name": "Library report templates",
+      "explanation": "Provide report templates needed by all PINES libraries and support template management (including parameterization and template distribution via configuration migration).",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt",
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-008"
+    },
+    {
+      "name": "Data-quality reports",
+      "explanation": "Provide reports that identify data-quality issues, enabling staff to detect, diagnose, and correct quality problems (define measurable outputs and coverage).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-009"
+    },
+    {
+      "name": "Inventory reports",
+      "explanation": "Provide inventory reports for operational and management oversight (define inventory scope, refresh cadence, and output formats).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-010"
+    },
+    {
+      "name": "Capacity reports",
+      "explanation": "Provide capacity reports for branch capacity management (define capacity metrics, time windows, and performance expectations).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-011"
+    },
+    {
+      "name": "Cross-branch comparison reports",
+      "explanation": "Provide reports that compare data across library branches, supporting consistent metrics and drill-down for analysis (define comparison dimensions and normalization rules).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-012"
+    },
+    {
+      "name": "In-transit item reports",
+      "explanation": "Provide reports on in-transit items to support delivery coordination (define item identifiers, shipment status derivation, and update frequency).",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-013"
+    },
+    {
+      "name": "Missing and damaged item reports",
+      "explanation": "Provide missing-item and damaged-item reports that can be produced per branch (define report filters, statuses, and data refresh behavior).",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-014"
+    },
+    {
+      "name": "Weeding support reports",
+      "explanation": "Provide reports to support collection weeding decisions (define inputs, time windows, and the measurable outputs required to justify weeding).",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-015"
+    },
+    {
+      "name": "Shelf-space utilization reports",
+      "explanation": "Provide reports on shelf-space utilization (define granularity such as branch/floor/shelf/category and data sources for utilization).",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-016"
+    },
+    {
+      "name": "Program-planning demographics",
+      "explanation": "Provide demographic analysis capabilities to support library program planning (define required outputs, time windows, and update/refresh frequency).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-017"
+    },
+    {
+      "name": "Report queue visibility",
+      "explanation": "Allow users to view the status and contents of the report-processing queue, with sufficient metadata to diagnose delays or failures (define authorization rules, queue ownership, and metadata fields).",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-018"
+    },
+    {
+      "name": "Non-disruptive report processing",
+      "explanation": "Report processing must not disrupt other system functions during open hours, including the circulation client; implement quantitative constraints and operational isolation such as acceptable latency/queue wait times and max resource impact during peak usage (define SLAs in implementation).",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-019"
+    },
+    {
+      "name": "Background/queued report processing",
+      "explanation": "Generate reports using background processing and/or queuing so that report generation does not slow the circulation client during peak hours; implementation must include concrete architecture and performance constraints (choose one or more approaches and specify SLAs).",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-020"
+    },
+    {
+      "name": "Consortium scale capacity support",
+      "explanation": "Support a consortium with 286 locations and ~17 million annual circulations, including purchasing and processing of >900,000 items per year; define measurable performance/capacity targets (concurrent users, peak-hour transactions, throughput, indexing/update rates) tied to these numbers and test scenarios.",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-021"
+    },
+    {
+      "name": "Relational database backend compatible with Evergreen",
+      "explanation": "Use a fully relational database backend that operates properly with the Evergreen relational data structure; implementation must specify Evergreen version expectations, schema compatibility, migrations, and verification tests (export/import formats and compatibility testing).",
+      "priority": "Critical",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-022"
+    },
+    {
+      "name": "Enterprise ILS integration",
+      "explanation": "Integrate with an enterprise-level library automation system (including Acquisitions and Cataloging) and rely on its data structures and functionality.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-023"
+    },
+    {
+      "name": "OPAC and patron data access",
+      "explanation": "Interact with the OPAC and patron data, including holds and circulation data created through the patron interface; define the authorized data sources and read/write scope for management reporting.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-024"
+    },
+    {
+      "name": "Vendor data integration",
+      "explanation": "Provide interfaces to vendor websites through published APIs and/or automated transfers of standard-format data files including USMARC21 and EDIFACT; implementation must specify authentication, exchange formats, frequencies, error-handling, and reconciliation procedures.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-025"
+    },
+    {
+      "name": "Configuration migration across environments",
+      "explanation": "Provide separate development and training environments and support migrating report templates and configurations from those environments to production.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-026"
+    },
+    {
+      "name": "Online help system",
+      "explanation": "Provide hierarchical, cross-linked online HTML help that is descriptive and illustrative of all system functions; implementation must specify coverage mapping and whether context-sensitive help is required per-screen or per-field.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-027"
+    },
+    {
+      "name": "Error reporting and feedback",
+      "explanation": "Provide thorough high-level error reporting and feedback for management-process operations.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-028"
+    },
+    {
+      "name": "Administrator query feedback",
+      "explanation": "Provide low-level, query-specific feedback for Local System Administrators and Global System Administrators in the front-end interface.",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-029"
+    },
+    {
+      "name": "Centralized multi-location operation",
+      "explanation": "Operate from a central location while accepting input from and providing services to multiple library locations.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-030"
+    },
+    {
+      "name": "Process documentation (developer deliverables)",
+      "explanation": "Provide a thorough high-level description of major processes, including bibliographic-record import/export, validation against internal/external authority sources, and standard reports.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-031"
+    },
+    {
+      "name": "Data specifications (developer deliverables)",
+      "explanation": "Provide complete data specifications for authority, bibliographic, order, item, hold/request, and other records maintained or accessed by the management processes.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-032"
+    },
+    {
+      "name": "Standards-compliant HTML outputs",
+      "explanation": "Ensure produced HTML for report displays, help content, and web-based UI components is valid and standards-compliant; implementation must specify applicable standards/validation tooling and pass criteria.",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-033"
+    },
+    {
+      "name": "Assistive technology compatibility",
+      "explanation": "The system shall be usable with screen readers, screen magnification, and other assistive software including JAWS, NVDA, and ZoomText (implementation must also map to a concrete accessibility conformance standard and test method if required).",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-034"
+    },
+    {
+      "name": "Staff report authoring/contribution",
+      "explanation": "Allow staff to create or contribute report content and report definitions; implementation must define the authoring interface, permission model, and what can/cannot be edited.",
+      "priority": "Medium",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt"
+      ],
+      "id": "REQ-035"
+    },
+    {
+      "name": "OPAC isolation from management-process constraints",
+      "explanation": "The management-process system must not constrain or reduce OPAC functionality or features.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-036"
+    },
+    {
+      "name": "Flexible role-based access control",
+      "explanation": "Control user rights and privileges using security groups and/or roles; implementation must define permission granularity, whether both are used, and role-to-permission mappings for reports, queues, and administrative functions.",
+      "priority": "High",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-037"
+    },
+    {
+      "name": "Access via supported client types",
+      "explanation": "Provide access through a web browser and/or a Windows-compatible client; implementation must clarify whether either is sufficient or whether both are mandatory and specify supported browser/app versions and deprecation policy.",
+      "priority": "Low",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ],
+      "id": "REQ-038"
+    }
+  ],
+  "blacklist": [
+    {
+      "statement": "Flexible role-based access control",
+      "reason": "Conflicting status resolved: this candidate is kept and merged as a primary access-control requirement with clarified implementation expectations; therefore it is not discarded.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Staff card-swipe login",
+      "reason": "Discarded due to missing specificity: card technology (e.g., HID), reader/authentication mechanism, mapping to identities/roles, and whether it applies to this reporting system versus broader authentication. Not enough technical detail to be enforceable.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Server operating systems (Linux or Solaris servers)",
+      "reason": "Discarded due to platform version/support-boundary ambiguity. While operating platform constraints matter, the requirement as stated is not enforceable without supported versions and a support/deprecation policy. Replaced by database/architecture and performance requirements where applicable.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Legacy browser support (IE 6.0+ and Firefox 2.0+)",
+      "reason": "Discarded because the specified browser versions are obsolete and conflict with modern security/platform expectations; would likely prevent secure operation. Kept as a general client-access requirement only (without obsolete version constraints).",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Section 508 compliance",
+      "reason": "Discarded as written because the applicable Section 508 revision/version and measurable conformance/testing criteria were not defined. Accessibility is retained via assistive-technology compatibility, but a concrete standard must be specified separately if required.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Background vs non-disruptive report processing as alternatives",
+      "reason": "Not discarded as a whole: non-disruptive report processing and background/queued processing are kept separately but with clarified requirement to define quantitative SLAs/constraints. The prior concern was about implementation choice ambiguity, addressed in kept requirements.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Context-sensitive help",
+      "reason": "Discarded as a standalone requirement because it lacks required granularity definition (per-screen/per-field/context mapping) and maintenance expectations. Context-sensitive help may be implemented, but it must be specified to be enforceable; the broader online help system is kept.",
+      "sources": [
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    },
+    {
+      "statement": "Report development testing gate (Reports Working Group review before release)",
+      "reason": "Discarded because it is an organizational development-process control rather than a runtime software requirement; not appropriate for a software requirements document without converting into a specific, testable delivery criterion.",
+      "sources": [
+        "meeting_2009-03-15_minutes.txt",
+        "meeting_2009-07-20_minutes.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "source_document_count": 2,
+    "review_rounds": 3
+  }
+}

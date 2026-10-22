@@ -1,0 +1,64 @@
+Loading documents from C:\Users\rraky\OneDrive - Univerzita Komenskeho v Bratislave\swe_ai\AI4SE_Labs_2026\Week_04_Requirements\Task_1\data\corpus
+|-> found 20 supported files
+Extracting candidates file by file
+...inspecting conversations/conv_pines014_material_volume.eml
+   |-> 7 candidates
+...inspecting conversations/conv_pines015_capacity_interface.eml
+   |-> 7 candidates
+...inspecting conversations/conv_pines016_shelf_space.eml
+   |-> 5 candidates
+...inspecting conversations/conv_pines018_item_transfer.eml
+   |-> 8 candidates
+...inspecting conversations/conv_pines019_020_missing_intransit.eml
+   |-> 4 candidates
+...inspecting conversations/conv_pines021_item_purging.eml
+   |-> 7 candidates
+...inspecting conversations/conv_pines022_deletions.eml
+   |-> 6 candidates
+...inspecting conversations/conv_pines023_patron_characteristics.eml
+   |-> 4 candidates
+...inspecting conversations/conv_pines024_inactive_patrons.eml
+   |-> 8 candidates
+...inspecting early_draft_srs_galecia.txt
+   |-> 9 candidates
+...inspecting email_financial_reports.eml
+   |-> 8 candidates
+...inspecting email_report_features.eml
+   |-> 8 candidates
+...inspecting email_staff_login.eml
+   |-> 6 candidates
+...inspecting evergreen_reference_2009.txt
+   |-> 8 candidates
+...inspecting interview_cataloging_2009-05-08.txt
+   |-> 9 candidates
+...inspecting interview_sysadmin_2009-05-10.txt
+   |-> 9 candidates
+...inspecting meeting_minutes/meeting_2009-03-15_minutes.txt
+   |-> 8 candidates
+...inspecting meeting_minutes/meeting_2009-07-20_minutes.txt
+   |-> 8 candidates
+...inspecting meeting_tech_subcommittee_2009-06-30.txt
+   |-> 12 candidates
+...inspecting survey_results_2009.txt
+   |-> 8 candidates
+|-> found 149 candidates (111 with concerns)
+Consolidating requirements (pass 1)
+|-> discarded 4 this pass
+|-> blacklist history: 4 unique entries
+|-> merged history: 5 unique entries
+Deterministic validation
+|-> found 136 requirements and 0 issues
+Reviewing consistency (round 1)
+|-> found 38 review issues
+Should revise again?
+Consolidating requirements (pass 2)
+|-> discarded 4 this pass
+|-> blacklist history: 4 unique entries
+|-> merged history: 5 unique entries
+Deterministic validation
+|-> found 136 requirements and 0 issues
+Reviewing consistency (round 2)
+|-> found 15 review issues
+Final review complete
+Finalizing document
+Wrote 136 requirements to requirements.md
