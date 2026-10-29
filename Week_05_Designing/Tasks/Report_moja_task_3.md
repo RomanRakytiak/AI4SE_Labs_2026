@@ -1,5 +1,9 @@
 # Task 3 – Moje zhodnotenie vytvoreného skillu
 
+Task 1 má Notes_1.md
+Task 2 ma Notes_2.md a Chosen_Architecture_old.md
+Task 3 má Report_Agent_task_3.md, SKILL.md, adr-template.md a Chosen_Architecture_new.md
+
 ## 1. Pôvodný spôsob práce
 
 Pri pôvodnom postupe som najskôr viedol dlhšiu diskusiu
