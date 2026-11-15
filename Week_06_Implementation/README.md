@@ -1,2 +1,2 @@
-Reporty v Assignments
-Kód v AI4SE_Playground
+- Reporty v Assignments
+- Kód v AI4SE_Playground
