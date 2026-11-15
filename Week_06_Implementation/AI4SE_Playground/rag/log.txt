@@ -1,0 +1,93 @@
+command: python rag\solve_tasks.py
+output:
+Solving OrderStatus.is_terminal...
+Solving InventoryLedger.__contains__...
+Solving Warehouse.stock_report...
+Solving OrderStateMachine.transition...
+Solving OrderLog.by_status...
+Solving Customer.can_afford...
+Solving Order.__len__...
+Solving BulkDiscountPricing.price...
+Solving EventBus.__contains__...
+Solving Money.__bool__...
+
+...................................................F.FFF.............................................F......................................................................................................................................................................................................................................E.................EEEEEEEEE..........................................................................................................................
+======================================================================
+ERROR: test_total_reflects_merged_quantities_for_bulk_discount (test_orders.OrderTotalTests.test_total_reflects_merged_quantities_for_bulk_discount)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_at_threshold_applies_discount (test_pricing.BulkDiscountPriceTests.test_at_threshold_applies_discount)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_below_threshold_returns_base_total (test_pricing.BulkDiscountPriceTests.test_below_threshold_returns_base_total)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_call_matches_price (test_pricing.BulkDiscountPriceTests.test_call_matches_price)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_discount_uses_floor_division (test_pricing.BulkDiscountPriceTests.test_discount_uses_floor_division)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_empty_items_below_threshold (test_pricing.BulkDiscountPriceTests.test_empty_items_below_threshold)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_full_discount_yields_zero (test_pricing.BulkDiscountPriceTests.test_full_discount_yields_zero)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_quantity_summed_across_lines (test_pricing.BulkDiscountPriceTests.test_quantity_summed_across_lines)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_wraps_base_with_tax (test_pricing.BulkDiscountPriceTests.test_wraps_base_with_tax)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+ERROR: test_zero_percent_returns_base_even_above_threshold (test_pricing.BulkDiscountPriceTests.test_zero_percent_returns_base_even_above_threshold)
+----------------------------------------------------------------------
+AttributeError: 'BulkDiscountPricing' object has no attribute '_minimum_quantity'
+
+======================================================================
+FAIL: test_cancelled_is_terminal (test_enums.OrderStatusTests.test_cancelled_is_terminal)
+----------------------------------------------------------------------
+AssertionError: <bound method OrderStatus.is_terminal of <OrderStatus.CANCELLED: 'cancelled'>> is not True
+
+======================================================================
+FAIL: test_new_is_not_terminal (test_enums.OrderStatusTests.test_new_is_not_terminal)
+----------------------------------------------------------------------
+AssertionError: <bound method OrderStatus.is_terminal of <OrderStatus.NEW: 'new'>> is not False
+
+======================================================================
+FAIL: test_reserved_is_not_terminal (test_enums.OrderStatusTests.test_reserved_is_not_terminal)
+----------------------------------------------------------------------
+AssertionError: <bound method OrderStatus.is_terminal of <OrderStatus.RESERVED: 'reserved'>> is not False
+
+======================================================================
+FAIL: test_shipped_is_terminal (test_enums.OrderStatusTests.test_shipped_is_terminal)
+----------------------------------------------------------------------
+AssertionError: <bound method OrderStatus.is_terminal of <OrderStatus.SHIPPED: 'shipped'>> is not True
+
+======================================================================
+FAIL: test_contains_present_even_if_zero_on_hand_after_commit (test_inventory.InventoryLedgerContainsLenIterTests.test_contains_present_even_if_zero_on_hand_after_commit)
+----------------------------------------------------------------------
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 481 tests in 0.078s
+
+FAILED (failures=5, errors=10)
